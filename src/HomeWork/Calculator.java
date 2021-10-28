@@ -16,6 +16,13 @@ public class Calculator {
         op = scanObject.next() .charAt(0);
         System.out.println(" Введите второе число :");
         b = scanObject.nextInt();
+        if (a > b) {
+            System.out.println(a + " > " + b);
+        } else if ( a < b ) {
+            System.out.println(a + " < " + b);
+        } else if ( a == b ) {
+            System.out.println( " Числа равны ");
+        }
         switch (op) {
             case '+':
                 result = a + b;
@@ -35,4 +42,3 @@ public class Calculator {
         System.out.println( a + " " + op + " " + b + " = " + result);
     }
 }
-//Для сравнения нужно ещё один switch запускать?
